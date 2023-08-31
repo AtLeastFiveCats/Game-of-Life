@@ -1,0 +1,1 @@
+"# Game-of-Life"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/AtLeastFiveCats/Game-of-Life.gitgit push -u origin main
