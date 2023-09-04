@@ -1,12 +1,15 @@
-import time
 import pygame
 import numpy as np
+#Changing the name of numpy to np for easy of typing
 
 color_bg = (10, 10, 10)
+#Setting the color of the background
 color_grid = (40, 40, 40)
+#Setting the color of the grid
 color_die_next = (190, 190, 190)
+#Setting the color of the cells about to die
 color_alive_next = (255, 255, 255)
-
+#Setting the color of the cells
 
 def update(screen, cells, size, with_progress = False):
     updated_cells = np.zeros((cells.shape[0], cells.shape[1]))
@@ -69,7 +72,6 @@ def main():
             cells = update(screen, cells, 10, with_progress = True)
             pygame.display.update()
 
-        time.sleep(0.001)
 
 
 if __name__ == "__main__":
